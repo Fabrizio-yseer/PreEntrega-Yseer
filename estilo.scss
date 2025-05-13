@@ -1,0 +1,218 @@
+// ===========================
+// VARIABLES
+// ===========================
+$color-principal: hsl(0, 100%, 34%);
+$color-secundario: #ffffff;
+$color-fondo: #f9f9f9;
+$color-texto: #333;
+$fuente-principal: 'Arial', sans-serif;
+
+// ===========================
+// ESTILOS GLOBALES
+// ===========================
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $fuente-principal;
+  background-color: $color-fondo;
+  color: $color-texto;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// ===========================
+// HEADER y NAV
+// ===========================
+header {
+  background-color: $color-principal;
+  color: $color-secundario;
+  padding: 1rem;
+  text-align: center;
+
+  nav {
+    margin-top: 1rem;
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+
+      li {
+        a {
+          color: $color-secundario;
+          font-weight: bold;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ===========================
+// FOOTER
+// ===========================
+footer {
+  background-color: $color-principal;
+  color: $color-secundario;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+// ===========================
+// INDEX.HTML
+// ===========================
+.index {
+  .contenido {
+    padding: 2rem;
+    text-align: center;
+  }
+}
+
+// ===========================
+// NOSOTROS.HTML
+// ===========================
+.nosotros {
+  .info {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+
+    h2 {
+      margin-bottom: 1rem;
+      color: $color-principal;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+// ===========================
+// CONTACTO.HTML
+// ===========================
+.contacto {
+  .formulario {
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      input,
+      textarea {
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-family: $fuente-principal;
+      }
+
+      button {
+        padding: 0.7rem;
+        background-color: $color-principal;
+        color: $color-secundario;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+
+        &:hover {
+          background-color: darken($color-principal, 10%);
+        }
+      }
+    }
+  }
+}
+
+// ===========================
+// MEJORAS DE USABILIDAD Y ACCESIBILIDAD
+// ===========================
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: 2px solid lighten($color-principal, 20%);
+  outline-offset: 2px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: darken($color-fondo, 30%);
+  font-style: italic;
+}
+
+// ===========================
+// TRANSICIONES SUAVES
+// ===========================
+
+a,
+button,
+input,
+textarea {
+  transition: all 0.3s ease;
+}
+
+// ===========================
+// MEDIA QUERIES - RESPONSIVE DESIGN
+// ===========================
+
+// Tablets (hasta 768px)
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .index .contenido,
+  .nosotros .info,
+  .contacto .formulario {
+    padding: 1.5rem;
+  }
+
+  form {
+    gap: 0.8rem;
+  }
+}
+
+// Smartphones (hasta 480px)
+@media (max-width: 480px) {
+  header {
+    padding: 0.8rem;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  footer {
+    padding: 0.8rem;
+  }
+
+  button {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  input,
+  textarea {
+    font-size: 0.9rem;
+  }
+}
+
