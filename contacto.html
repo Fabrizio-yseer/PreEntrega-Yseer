@@ -1,124 +1,176 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contacta con Tinta Roja, medio independiente comprometido con la verdad. Estamos aquí para escuchar tus consultas y sugerencias." />
+  <title>Contacto - Tinta Roja | Medio independiente de periodismo</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/css (general).css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
 
-    <!-- Estilos personalizados SCSS -->
-    <link rel="stylesheet" href="estilo.css">
-    
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="css/css (general).css" />
+  <link rel="stylesheet" href="estilo.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
+  <header class="container">
+    <div class="date text-end pt-2 small text-muted">DOMINGO 23 DE MARZO, 2025</div>
 
-            <div class="date">DOMINGO 23 DE MARZO, 2025</div>
+    <div class="logo text-center my-3">
+      <img src="acces/LOGO-TintaRoja.png" alt="Tinta Roja" class="img-fluid" loading="lazy" />
+    </div>
 
-            <div class="logo">
-                <img src="acces/LOGO-TintaRoja.png" alt="Tinta Roja">
-            </div>
+    <div class="info-bar d-flex justify-content-between align-items-center flex-wrap py-2 border-top border-bottom">
+      <a href="#" class="text-decoration-none">PREGUNTAS FRECUENTES</a>
+      <span>EDICIÓN 725, AÑO 15</span>
+      <div class="right-section d-flex align-items-center">
+        <a href="#" class="me-3 text-decoration-none">INICIAR SESIÓN</a>
+        <form role="search" aria-label="Formulario de búsqueda" class="d-flex" method="GET" action="#">
+          <input
+            type="search"
+            name="q"
+            class="form-control form-control-sm me-1"
+            placeholder="Buscar..."
+            aria-label="Buscar"
+            required
+          />
+          <button type="submit" class="btn btn-sm btn-outline-secondary">🔍</button>
+        </form>
+      </div>
+    </div>
 
-            <!-- Primera sección -->
-            <div class="info-bar">
-                <a href="#">PREGUNTAS FRECUENTES</a>
-                <span>EDICIÓN 725, AÑO 15</span>
-                <div class="right-section">
-                    <a href="#">INICIAR SESIÓN</a>
-                    <div class="search-box">
-                        <input type="text" placeholder="Buscar...">
-                        <button type="submit">🔍</button>
-                    </div>
-                </div>
-            </div>
+<!-- Menú de navegación -->
+      <nav class="mt-3" role="navigation" aria-label="Menú principal">
+        <ul class="nav justify-content-center flex-wrap">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Reportajes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Opinión</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Archivo</a></li>
+          <li class="nav-item"><a class="nav-link" href="suscripciones.html">Suscripciones</a></li>
+        </ul>
+      </nav>
 
-            <hr class="separator">
+  </header>
 
-            <!-- Segunda sección -->
-            <nav>
-                <ul>
-                    <li class="nav-item"><a href="index.html">Inicio</a></li>
-                  <li class="nav-item"></li><a href="../page/sobre nosotros.html">Nosotros</a></li>
-                  <li class="nav-item"></li><a href="../page/contacto.html">Contacto</a></li>
-                    <li><a href="#">REPORTAJES</a></li>
-                    <li><a href="#">OPINIÓN</a></li>
-                    <li><a href="#">ARCHIVO</a></li>
-                    <li><a href="#">NOSOTROS</a></li>
-                <li class="nav-item"><a class="nav-link" href="suscripciones.html">SUSCRIPCIONES</a></li>
-                </ul>
-            </nav>
-
-            <hr class="separator">
+  <main class="container my-5">
+    <section class="contacto row g-4">
+      <div class="info-contacto col-md-5">
+        <h1>Contáctanos</h1>
+        <p>Estamos aquí para escuchar tus comentarios, consultas y sugerencias.</p>
+        <hr />
+        <div class="datos fs-5">
+          <p>📍 Calle Paracas 532, Pueblo Libre</p>
+          <p>✉ <a href="mailto:info@tintaroja.com">info@tintaroja.com</a></p>
+          <p>📞 <a href="tel:+5113116500">(511) 311-6500</a></p>
         </div>
-    </header>
+      </div>
 
-    <section class="contacto">
-        <div class="info-contacto">
-            <h1>Contáctanos</h1>
-            <p>Estamos aquí para escuchar tus comentarios, consultas y sugerencias.</p>
-            <hr>
-            <div class="datos">
-                <p>📍 Calle Paracas 532, Pueblo Libre</p>
-                <p>✉ info@tintaroja.com</p>
-                <p>📞 (511) 311-6500</p>
-            </div>
-        </div>
-
-        <div class="formulario">
-            <form action="#" method="POST">
-                <input type="text" name="nombres" placeholder="Nombres *" required>
-                <input type="text" name="apellidos" placeholder="Apellidos *" required>
-                <input type="email" name="correo" placeholder="Correo electrónico *" required>
-                <input type="tel" name="telefono" placeholder="Teléfono">
-                <textarea name="mensaje" placeholder="Mensaje *" required></textarea>
-
-                <label>
-                    <input type="checkbox" required>
-                    Acepto los términos y condiciones
-                </label>
-
-                <button type="submit">ENVIAR</button>
-            </form>
-        </div>
+      <div class="formulario col-md-7">
+        <form action="#" method="POST" aria-label="Formulario de contacto">
+          <div class="mb-3">
+            <label for="nombres" class="form-label">Nombres *</label>
+            <input
+              type="text"
+              id="nombres"
+              name="nombres"
+              class="form-control"
+              placeholder="Nombres"
+              required
+              autocomplete="given-name"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="apellidos" class="form-label">Apellidos *</label>
+            <input
+              type="text"
+              id="apellidos"
+              name="apellidos"
+              class="form-control"
+              placeholder="Apellidos"
+              required
+              autocomplete="family-name"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo electrónico *</label>
+            <input
+              type="email"
+              id="correo"
+              name="correo"
+              class="form-control"
+              placeholder="Correo electrónico"
+              required
+              autocomplete="email"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              class="form-control"
+              placeholder="Teléfono"
+              autocomplete="tel"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje *</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              class="form-control"
+              placeholder="Mensaje"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="terminos" name="terminos" required />
+            <label class="form-check-label" for="terminos">Acepto los términos y condiciones</label>
+          </div>
+          <button type="submit" class="btn btn-primary">ENVIAR</button>
+        </form>
+      </div>
     </section>
+  </main>
 
-    <!--Contenido "Footer"-->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-logo">
-                <img src="acces/LOGO-TintaRoja.png" alt="Logo del periódico">
-            </div>
-
-            <div class="footer-info">
-                <p><strong>DIRECTOR PERIODÍSTICO:</strong> Fabrizio Yseer</p>
-                <p><strong>EDITOR DE "LO ÚLTIMO":</strong> Fabrizio Yseer</p>
-                <p><strong>EDITOR DE "POLÍTICA":</strong> Fabrizio Yseer</p>
-                <p><strong>EDITOR DE "ECONOMÍA":</strong> Fabrizio Yseer</p>
-                <p><strong>REDACTOR:</strong> Fabrizio Yseer</p>
-            </div>
-
-            <div class="footer-social">
-                <a href="#"><img src="../acces/instagram.svg" alt="Instagram"></a>
-                <a href="#"><img src="../acces/facebook.svg" alt="Facebook"></a>
-                <a href="#"><img src="../acces/twitter.svg" alt="Twitter"></a>
-                <a href="#"><img src="../acces/youTube.svg" alt="YouTube"></a>
-            </div>
-
-            <div class="footer-links">
-                <a href="#">QUIÉNES SOMOS</a>
-                <a href="#">TÉRMINOS Y CONDICIONES</a>
-                <a href="#">LIBRO DE RECLAMACIONES</a>
-                <a href="#">POLÍTICAS DE PRIVACIDAD</a>
-                <a href="#">POLÍTICA DE COOKIES</a>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 Tinta Roja - Todos los derechos reservados.</p>
-            </div>
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row align-items-center mb-3">
+        <div class="col-md-3 text-center text-md-start mb-3 mb-md-0">
+          <img src="acces/LOGO-TintaRoja.png" alt="Logo del periódico Tinta Roja" class="img-fluid" loading="lazy" />
         </div>
-    </footer>
+        <div class="col-md-5">
+          <p><strong>DIRECTOR PERIODÍSTICO:</strong> Fabrizio Yseer</p>
+          <p><strong>EDITOR DE "LO ÚLTIMO":</strong> Fabrizio Yseer</p>
+          <p><strong>EDITOR DE "POLÍTICA":</strong> Fabrizio Yseer</p>
+          <p><strong>EDITOR DE "ECONOMÍA":</strong> Fabrizio Yseer</p>
+          <p><strong>REDACTOR:</strong> Fabrizio Yseer</p>
+        </div>
+        <div class="col-md-4 text-md-end text-center">
+          <a href="#" class="text-white me-3"><img src="acces/instagram.svg" alt="Instagram" width="24" /></a>
+          <a href="#" class="text-white me-3"><img src="acces/facebook.svg" alt="Facebook" width="24" /></a>
+          <a href="#" class="text-white me-3"><img src="acces/twitter.svg" alt="Twitter" width="24" /></a>
+          <a href="#" class="text-white"><img src="acces/youTube.svg" alt="YouTube" width="24" /></a>
+        </div>
+      </div>
+
+      <div class="d-flex flex-wrap justify-content-center gap-3 mb-2 small">
+        <a href="#" class="text-white text-decoration-none">QUIÉNES SOMOS</a>
+        <a href="#" class="text-white text-decoration-none">TÉRMINOS Y CONDICIONES</a>
+        <a href="#" class="text-white text-decoration-none">LIBRO DE RECLAMACIONES</a>
+        <a href="#" class="text-white text-decoration-none">POLÍTICAS DE PRIVACIDAD</a>
+        <a href="#" class="text-white text-decoration-none">POLÍTICA DE COOKIES</a>
+      </div>
+
+      <div class="text-center mt-3 small">
+        <p class="mb-0">&copy; 2025 Tinta Roja - Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
